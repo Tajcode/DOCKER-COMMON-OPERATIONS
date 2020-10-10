@@ -1,0 +1,34 @@
+docker --version
+This is used to check version
+
+sudo docker pull ubuntu 
+
+Used to pull container/docker images from docker hub
+
+sudo docker images 
+For checking docker images
+
+sudo docker run (image name)
+To a specific image 
+sudo docker run -it -d  
+It runs container
+-it = interactive terminal 
+-d = daemon (runs in the background)
+sudo docker ps
+shows container in running state
+sudo docker ps -a 
+Shows running and stop state containers to give all existing containers.
+ sudo docker stop (container id)
+ 
+ To stop container from running
+ sudo docker exec -it (container id)
+ 
+ sudo apt-get 
+ To update containers
+ 
+ exit
+ To get out of the container system
+ sudo docker kill (container id) :To kill/terminate running container .It complete terrmination different from stop
+ sudo docker rmi (container id):sudo docker rmi (container id):to remove container from system 
+ 
+ 
