@@ -1,0 +1,27 @@
+# DOCKER-COMMON-OPERATIONS
+Commands that can be used to perform operations in Docker-Linux/Ubuntu
+docker log in to enter docker hub which means you should have docker hub account 
+sudo docker pull
+DOCKERFILE TO AUTOMATE DOCKER OPERATIONS
+mkdir dockerfile
+cd dockerfile
+nano dockerfile to enter the file and put /run this:
+FROM ubuntu
+ADD ./var/ww/html/
+CMD apachectl -D FOREGROUND 
+ENTRYPOINT apachectl -D FOREGROUND ENV name DevOps intellipaat (for example)
+
+
+COMMIT CHANGES TO DOCKER
+mkdir app
+cd app
+sudo docker app
+sudo docker rm -f (docker id) forcefully  remove docker with this command 
+sudo docker commit (container id) new (any commit name new or whatever) 
+sudo docker ps (To know all dockers running) 
+sudo docker ps -a (To know all docker including in stop state or running) 
+sudo docker run -it -d test 
+This command runs containers) 
+sudo docker exec -ti  (container id) 
+sudo docker rm -f(sudo docker ps -a -q)
+
